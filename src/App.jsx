@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin"; // Import the ScrollTo plugin
 import React, { lazy, useEffect, useRef } from "react";
 import Cardlayout from "./Components/Cardlayout";
-import MenuBar from "./Components/MenuBar";
 import "./index.css";
 
 // Register the ScrollToPlugin
@@ -52,7 +51,7 @@ const App = () => {
             alt="Logo"
             className="h-[50px] w-[200px] object-cover"
           />
-          <MenuBar />
+         <a href="https://rajalakshmi.org/design-summit-2k24/" target="_self" rel="noopener noreferrer " className="hover:underline p-4 font-mono">Register</a>
         </div>
         <Canvas
           camera={{ fov: 70 }}
@@ -89,12 +88,6 @@ const App = () => {
           </div>
         </div>
         <Cardlayout />
-        {/* <button
-          ref={scrollToTopBtn}
-          onClick={scrollToTop}
-          className="z-10 fixed bottom-8 right-8 bg-violet-900 hover:bg-red-400-900 text-white p-4 rounded-[50%] shadow-lg" >
-          <i class="text-2xl ri-arrow-up-line"></i>
-        </button> */}
       </div>
     </>
   );

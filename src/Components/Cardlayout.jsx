@@ -1,5 +1,4 @@
 import React, { useCallback } from 'react';
-import { gsap } from 'gsap';
 
 const EventCard = React.memo(({ event, index }) => {
   return (
