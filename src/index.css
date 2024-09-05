@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,#root{
+    width: 100%;
+    height: 100%;
+}
+#root{
+    background-color: black;
+}
+
+@font-face {
+	font-family: 'Skyscapers';
+	src: url('//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf') format('truetype');
+}
+.yatra-one-regular {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Relieve Demo';
+    src: url('/design-summit/public/relieve/Relieve.woff2') format('woff2'),
+         url('/design-summit/public/relieve/Relieve.woff') format('woff'),
+         url('/design-summit/public/relieve/Relieve.ttf') format('truetype');
+}
+
+body{
+	font-family:'Yatra One','Poppins';
+    overflow-x: hidden;
+}
+/* 'Relieve Demo'  'Skyscapers'*/
+.f{
+    /* font-family: 'Poppins'; */
+    /* letter-spacing: 0.06em; */
+    color: rgb(178, 185, 190);
+}
+b{
+  font-size: larger;
+}
+i{
+    /* padding: 7px;
+    border-radius:50%;
+    border: 1px solid white;
+    */
+    margin-left:10px ;
+    margin-right:10px ; 
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* Hide scrollbar for all other browsers */
+  html {
+    overflow: hidden;
+  }
+
+  /* Luminous effect for card */
+.luminous-card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Apply the glow effect */
+.luminous-card:hover {
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.7); /* Adjust the color and intensity as needed */
+}
