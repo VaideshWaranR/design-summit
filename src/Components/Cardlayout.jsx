@@ -18,11 +18,6 @@ const EventCard = React.memo(({ event, index }) => {
         {event.name}
       </h2>
 
-      {/* Event Date and Time */}
-      <p className="text-white mt-2 text-center overflow-y-hidden inline-block h-[20px]">
-        {event.day} - {event.time}
-      </p>
-
       {/* Event Description */}
       {event.about && (
         <div className="my-4 text-center flex-grow">
