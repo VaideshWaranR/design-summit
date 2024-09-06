@@ -4,7 +4,7 @@ const EventCard = React.memo(({ event, index }) => {
   return (
     <div
       key={index}
-      className="event-card w-full sm:w-[45%] lg:w-[30%] bg-white/10 rounded-lg shadow-md overflow-hidden p-4 flex flex-col transition-transform"
+      className="event-card w-full sm:w-[46%] lg:w-[30%] bg-white/10 rounded-lg shadow-md overflow-hidden p-4 flex flex-col transition-transform"
     >
       {/* Event Image */}
       <img
@@ -82,7 +82,7 @@ const Cardlayout = () => {
           day: "Day 1",
           time: "10:00 AM - 12:00 PM",
           about: "Students will be allowed to clarify their doubts on placements and higher studies from the presenters.",
-          image: "https://www.pixelstalk.net/wp-content/uploads/2016/01/Anime-Background-Desktop.jpg",
+          image: "/1.png",
         },
         {
           name: "Techno Kallos",
@@ -95,7 +95,7 @@ const Cardlayout = () => {
             "The contest will be held in offline mode within the stimulated time, and the dates will be fixed according to the final decision.",
           ],
           judgingCriteria: ["Creativity and Innovation", "Visual Appeal", "Functionality and Feasibility"],
-          image: "https://www.pixelstalk.net/wp-content/uploads/2016/01/Anime-Background-Desktop.jpg",
+          image: "/2.png",
         },
         {
           name: "Design Arena",
@@ -112,7 +112,7 @@ const Cardlayout = () => {
           ],
           judgingCriteria: ["Creativity and Innovation", "User Experience (UX) Design Principles", "Visual Appeal", "Functionality and Feasibility"],
           judges: "A panel of experienced UI/UX designers will evaluate submissions.",
-          image: "https://www.pixelstalk.net/wp-content/uploads/2016/01/Anime-Background-Desktop.jpg",
+          image: "/7.png",
         },
         {
           name: "Vision Vault",
@@ -127,7 +127,7 @@ const Cardlayout = () => {
             "PPT should not include AI-generated content.",
           ],
           judgingCriteria: ["Presentation should be clear, compelling and crafted.", "Feasibility and scalability of the project.", "Presentation and communication skills."],
-          image: "https://www.pixelstalk.net/wp-content/uploads/2016/01/Anime-Background-Desktop.jpg",
+          image: "/3.png",
         },
         {
           name: "Discussion Den",
@@ -143,7 +143,7 @@ const Cardlayout = () => {
             "Presentation: At the end of the preparation time, each team will present their discussion points.",
           ],
           judgingCriteria: ["Clarity of Thought", "Team Collaboration and Dynamics", "Relevance and Depth of Discussion", "Presentation Skills"],
-          image: "https://www.pixelstalk.net/wp-content/uploads/2016/01/Anime-Background-Desktop.jpg",
+          image: "/4.png",
         },
         {
           name: "Code Crack",
@@ -156,7 +156,7 @@ const Cardlayout = () => {
             "Participants should mention their known programming language(s).",
             "No plagiarism.",
           ],
-          image: "https://www.pixelstalk.net/wp-content/uploads/2016/01/Anime-Background-Desktop.jpg",
+          image: "/5.png",
         },
       ],
     },
@@ -176,7 +176,7 @@ const Cardlayout = () => {
             "Winning Criteria: The first team to escape from all 5 rooms by solving all problems will be declared the winner.",
           ],
           materialsProvided: ["Chairs and tables", "A black or whiteboard for brainstorming", "Pens and papers for notes"],
-          image: "https://www.pixelstalk.net/wp-content/uploads/2016/01/Anime-Background-Desktop.jpg",
+          image: "/6.png",
         }
       ]
     },
