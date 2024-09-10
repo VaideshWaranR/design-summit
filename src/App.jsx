@@ -55,7 +55,7 @@ const App = () => {
          <a href="https://rajalakshmi.org/design-summit-2k24/" target="_self" rel="noopener noreferrer " className="hover:underline p-4 font-mono">Register</a>
         </div>
         <Canvas
-          camera={{ fov: 70 }}
+          camera={{ fov: 85 }}
           gl={{ alpha: true }}
           style={{ padding: "0px", width: "100vw", height: "50vh" }}
         >

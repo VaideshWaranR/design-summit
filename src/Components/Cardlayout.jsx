@@ -1,6 +1,10 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 
 const EventCard = React.memo(({ event, index }) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
   return (
     <div
       key={index}
@@ -56,13 +60,75 @@ const EventCard = React.memo(({ event, index }) => {
         </div>
       )}
 
-<a href="https://rajalakshmi.org/design-summit-2k24/" target="_self" rel="noopener noreferrer">
+{event.name=='Techno Kallos'?<button  onClick={togglePopup} className="relative px-6 py-2.5 font-medium text-white group">
+        <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-violet-200 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+        <span className="absolute inset-0 w-full h-full border-2 bg-violet-800 group-hover:bg-violet-600"></span>
+        <span className="relative text-white group-hover:text-white">View Qualified Team Details</span>
+      </button>:<a href="https://rajalakshmi.org/design-summit-2k24/" target="_self" rel="noopener noreferrer">
       <button className="relative px-6 py-2.5 font-medium text-white group">
         <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-violet-200 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
         <span className="absolute inset-0 w-full h-full border-2 bg-violet-800 group-hover:bg-violet-600"></span>
         <span className="relative text-white group-hover:text-white">Register</span>
       </button>
       </a>
+}  
+
+{isPopupOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 overflow-scroll">
+         <div className="bg-white w-[95%] p-2 rounded-lg shadow-lg relative">
+  <h2 className="text-xl font-semibold mb-4 ml-4 p-2 mx-auto">Qualified Team Details</h2>
+  <ul className="list-decimal list-inside text-left grid grid-cols-2 ">
+    {[
+      "Tech Titans",
+      "Tech Fury",
+      "HackOverflow",
+      "Binary Brains",
+      "Design Sprinters",
+      "Tech Titans",
+      "DH",
+      "Flash&Code",
+      "Web Spartenz",
+      "Task Master",
+      "Code freaks",
+      "Hell Divers",
+      "Pixel Pirates",
+      "Section 13",
+      "Sparkoders",
+      "Tech Titans",
+      "Team DS",
+      "Trex-Dino",
+      "WEB WIZARDS",
+      "Binary brains",
+      "FrontEndTheriyathu",
+      "Technoglitz",
+      "NPC's",
+      "Area 404",
+      "DEAD&LOGAN",
+      "Summit seeker",
+      "Web Wave",
+      "Data_Dynamos",
+      "Echo",
+      "Vivaia",
+    ].map((team, index) => (
+      <li key={index} className="p-1 text-black">
+        {team}
+      </li>
+    ))}
+  </ul>
+  <button
+    className="z-[1000] absolute cursor-pointer top-3 right-3 text-3xl text-gray-900 hover:text-gray-400"
+    onClick={togglePopup}
+  >
+    &times;
+  </button>
+</div>
+
+          <div
+            className="fixed inset-0 bg-black opacity-20"
+            onClick={togglePopup}
+          ></div>
+        </div>
+      )}
     </div>
   );
 });
