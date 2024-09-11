@@ -7,6 +7,7 @@ import React, { lazy, useEffect, useRef } from "react";
 import Cardlayout from "./Components/Cardlayout";
 import "./index.css";
 import FlipTimer from "./Components/FlipTimer";
+import Footer from "./Components/Footer";
 
 // Register the ScrollToPlugin
 gsap.registerPlugin(ScrollToPlugin);
@@ -88,6 +89,7 @@ const App = () => {
         </div>
         {/* <FlipTimer /> */}
         <Cardlayout />
+        <Footer />
       </div>
     </>
   );
