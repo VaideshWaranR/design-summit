@@ -8,6 +8,7 @@ import Cardlayout from "./Components/Cardlayout";
 import "./index.css";
 import FlipTimer from "./Components/FlipTimer";
 import Footer from "./Components/Footer";
+import Postponed from "./Components/Postponed";
 
 // Register the ScrollToPlugin
 gsap.registerPlugin(ScrollToPlugin);
@@ -88,7 +89,8 @@ const App = () => {
           </div>
         </div>
         {/* <FlipTimer /> */}
-        <Cardlayout />
+        {/* <Cardlayout /> */}
+        <Postponed />
         <Footer />
       </div>
     </>

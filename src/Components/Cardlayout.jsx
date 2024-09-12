@@ -60,7 +60,7 @@ const EventCard = React.memo(({ event, index }) => {
         </div>
       )}
 
-{event.name=='Techno Kallos'?<button  onClick={togglePopup} className="relative px-6 py-2.5 font-medium text-white group">
+{/* {event.name=='Techno Kallos'?<button  onClick={togglePopup} className="relative px-6 py-2.5 font-medium text-white group">
         <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-violet-200 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
         <span className="absolute inset-0 w-full h-full border-2 bg-violet-800 group-hover:bg-violet-600"></span>
         <span className="relative text-white group-hover:text-white">View Qualified Team Details</span>
@@ -71,7 +71,7 @@ const EventCard = React.memo(({ event, index }) => {
         <span className="relative text-white group-hover:text-white">Register</span>
       </button>
       </a>
-}  
+}   */}
 
 {isPopupOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 overflow-scroll">
