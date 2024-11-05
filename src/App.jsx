@@ -89,8 +89,8 @@ const App = () => {
           </div>
         </div>
         {/* <FlipTimer /> */}
-        {/* <Cardlayout /> */}
-        <Postponed />
+        <Cardlayout />
+        {/* <Postponed /> */}
         <Footer />
       </div>
     </>
