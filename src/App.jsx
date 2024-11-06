@@ -52,9 +52,8 @@ const App = () => {
           <img
             src="./logow.png"
             alt="Logo"
-            className="h-[50px] w-[200px] object-cover"
-          />
-         <a href="https://rajalakshmi.org/design-summit-2k24/" target="_self" rel="noopener noreferrer " className="hover:underline p-4 font-mono">Register</a>
+            className="h-[50px] w-[200px] object-cover"/>
+         {/* <a href="https://rajalakshmi.org/design-summit-2k24/" target="_self" rel="noopener noreferrer " className="hover:underline p-4 font-mono">Register</a> */}
         </div>
         <Canvas
           camera={{ fov: 85 }}
